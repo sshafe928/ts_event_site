@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node app.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +17,9 @@
     "url": "^0.11.4"
   },
   "devDependencies": {
-    "@types/node": "^22.15.3"
+    "@types/body-parser": "^1.19.5",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.15.3",
+    "typescript": "^5.8.3"
   }
 }

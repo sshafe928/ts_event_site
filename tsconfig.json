@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+    /* Language and Environment */
+    "target": "es6",                           /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "module": "es2020",                            /* Use ESNext module format (supports import.meta.url) */
+    "moduleResolution": "node",                    /* Module resolution strategy compatible with Node.js */
+    "rootDir": "./",                               /* Specify the root folder for your TypeScript files. */
+    "strict": true,                                /* Enable all strict type-checking options. */
+    "esModuleInterop": true,                       /* Allow default import of CommonJS modules (like fs, path) */
+    "forceConsistentCasingInFileNames": true,      /* Ensure consistent casing in imports. */
+    "skipLibCheck": true,                          /* Skip type checking for declaration files in node_modules. */
+    
+    /* Emit */
+    "outDir": "./dist",                            /* Specify an output directory for the compiled JavaScript files. */
+    "noEmitOnError": true,                         /* Prevent emitting JavaScript if there are type errors. */
+
+    /* Additional TypeScript features */
+    "resolveJsonModule": true,                     /* Allow importing .json files. */
+    "isolatedModules": true,                       /* Ensure each file can be safely transpiled without relying on other imports. */
+    "allowSyntheticDefaultImports": true,          /* Allow default imports from modules without a default export. */
+
+    /* Type Checking */
+    "strictNullChecks": true,                      /* Ensure null and undefined are properly checked. */
+    "noImplicitAny": true,                         /* Raise error for variables with implicit 'any' type. */
+    "noImplicitThis": true,                        /* Raise error when 'this' is implicitly 'any'. */
+
+    /* Additional options for modern Node.js */
+    "moduleDetection": "force",                    /* Enforce ES Module syntax for Node.js codebase. */
+    
+    /* Optional Debugging */
+    "sourceMap": true,                             /* Generate separate source map files for easier debugging. */
+
+    /* Ensure module compatibility */
+    "allowJs": true,                               /* Allow JavaScript files to be a part of your project. */
+    "declaration": true,                           /* Generate declaration files (.d.ts). */
+    "declarationMap": true,                        /* Create sourcemaps for declaration files. */
+    "emitDeclarationOnly": false,                  /* Emit both declaration files and compiled JS files. */
+    "removeComments": true                         /* Remove comments from the emitted JavaScript. */
+    },
+    "include": ["**/*.ts"],                          /* Include all TypeScript files in the project. */
+    "exclude": ["node_modules", "dist", "**/*.spec.ts"] /* Exclude node_modules, dist folder, and test files. */
+}
