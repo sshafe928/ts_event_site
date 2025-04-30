@@ -1,0 +1,35 @@
+[
+    {
+    "id": 6,
+    "name": "Health and Wellness Expo",
+    "type": "Expo for welness and stuff",
+    "date": "2024-11-01",
+    "attendees": 8
+    },
+    {
+    "id": 7,
+    "name": "Holiday Networking Mixer",
+    "type": "Networking Event",
+    "date": "2024-11-15"
+    },
+    {
+    "id": 8,
+    "name": "Summer Music Festival",
+    "type": "Music Festival",
+    "date": "2024-07-10",
+    "attendees": 1
+    },
+    {
+    "id": 9,
+    "name": "Startup Pitch Competition",
+    "type": "Competition",
+    "date": "2024-09-30"
+    },
+    {
+    "id": 5,
+    "name": "Pizza Party",
+    "date": "2024-10-12",
+    "type": "outside",
+    "attendees": "3"
+    }
+]

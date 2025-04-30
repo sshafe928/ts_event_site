@@ -1,0 +1,156 @@
+@font-face {
+    font-family: bingo; /* Define a custom font called 'bingo' */
+    src: url(BingoHeyhoRegular.otf); /* Specify the font file source */
+}
+
+:root {
+    /* Define color variables for consistent theming */
+    --primary-color: #30427c; /* Main theme color */
+    --secondary-color: #d6e2f6; /* Light secondary color */
+    --text-color: #333; /* Default text color */
+    --background-color: #fff; /* Background color for elements */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Default font for body text */
+    line-height: 1.6; /* Increase line height for readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: var(--secondary-color); /* Set background color */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Ensure the body covers full viewport height */
+}
+
+h1 {
+    color: var(--text-color); /* Set color for main headings */
+    text-align: center; /* Center align heading text */
+    margin-top: 40px; /* Space above heading */
+}
+
+nav {
+    display: flex; /* Use flexbox for navigation layout */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+    background-color: var(--primary-color); /* Background color for nav */
+    padding: 10px 5%; /* Padding around nav items */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Shadow effect for depth */
+}
+
+nav ul {
+    display: flex; /* Horizontal list using flexbox */
+    justify-content: center; /* Center list items */
+    flex-grow: 1; /* Allow the list to grow */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    list-style: none; /* Remove bullet points */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: var(--background-color); /* Set link color */
+}
+
+nav li {
+    margin: 0 15px; /* Space between nav items */
+    font-family: bingo; /* Use custom font for nav items */
+    font-size: 2.5em; /* Large font size for visibility */
+}
+
+button {
+    padding: 10px 20px; /* Internal padding for buttons */
+    background-color: rgb(178, 218, 255); /* Background color for buttons */
+    border: none; /* No border for buttons */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button text */
+    margin: 10px 0; /* Space above and below buttons */
+}
+
+button:hover {
+    background-color: rgb(150, 200, 255); /* Change color on hover */
+}
+
+form {
+    background-color: var(--background-color); /* Background color for forms */
+    width: 90%; /* Responsive width */
+    max-width: 800px; /* Maximum width for forms */
+    margin: 20px auto; /* Center the form with margins */
+    padding: 40px; /* Internal padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    flex-grow: 1; /* Allow form to grow in flex container */
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%; /* Full width for inputs and text areas */
+    padding: 15px; /* Internal padding */
+    margin-bottom: 20px; /* Space below elements */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in width */
+    font-size: 16px; /* Font size for inputs */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing of text area */
+    min-height: 150px; /* Minimum height for text area */
+}
+
+button[type="submit"] {
+    display: block; /* Block display for submit buttons */
+    width: 100%; /* Full width for submit buttons */
+    padding: 15px; /* Internal padding */
+    background-color: var(--primary-color); /* Background color for submit button */
+    color: var(--background-color); /* Text color for submit button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 18px; /* Font size for submit button */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+button[type="submit"]:hover {
+    background-color: #678ee2; /* Change background color on hover */
+}
+
+/* Styles for back button */
+.back {
+    display: block; /* Block display for back button */
+    width: 200px; /* Fixed width for back button */
+    margin: 20px auto; /* Center with margins */
+    padding: 15px; /* Internal padding */
+    background-color: #f0f0f0; /* Background color for back button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Center text in back button */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.back a {
+    text-decoration: none; /* Remove underline from link */
+    color: var(--text-color); /* Text color for link */
+    font-size: 16px; /* Font size for link */
+}
+
+.back:hover {
+    background-color: #e0e0e0; /* Change background color on hover */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    nav li {
+        font-size: 2em; /* Adjust font size for nav items */
+    }
+
+    h1 {
+        font-size: 2.5em; /* Adjust font size for headings */
+    }
+
+    form {
+        padding: 20px; /* Reduce padding for forms */
+    }
+}

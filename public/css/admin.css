@@ -1,0 +1,185 @@
+@font-face {
+    font-family: bingo; /* Define custom font */
+    src: url(BingoHeyhoRegular.otf); /* Font source */
+}
+
+:root {
+    /* Define color variables for consistent theming */
+    --primary-color: #30427c; /* Main color */
+    --secondary-color: #d6e2f6; /* Secondary color */
+    --text-color: #333; /* Text color */
+    --background-color: #fff; /* Background color */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Default font for body text */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    background-color: var(--secondary-color); /* Set background color */
+    color: var(--text-color); /* Set text color */
+    line-height: 1.6; /* Improve readability with line height */
+}
+
+.container {
+    max-width: 800px; /* Maximum width for main content */
+    width: 90%; /* Responsive width */
+    margin: 20px auto; /* Center container with margin */
+    padding: 20px; /* Internal padding */
+    background-color: var(--background-color); /* Background for container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+nav {
+    display: flex; /* Use flexbox for navigation layout */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Align items vertically */
+    background-color: var(--primary-color); /* Nav background */
+    padding: 10px 5%; /* Padding around nav */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Shadow for nav */
+}
+
+nav ul {
+    display: flex; /* Horizontal list using flexbox */
+    justify-content: center; /* Center the list items */
+    flex-grow: 1; /* Allow list to grow */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    list-style: none; /* Remove bullet points */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: var(--background-color); /* Set link color */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+nav li {
+    margin: 0 15px; /* Spacing between nav items */
+    font-family: bingo, Arial, sans-serif; /* Custom font for nav items */
+    font-size: 2.5em; /* Larger font size for visibility */
+}
+
+nav a:hover {
+    color: var(--secondary-color); /* Change color on hover */
+}
+
+h1.admin {
+    text-align: center; /* Center the admin title */
+    font-family: bingo; /* Custom font for admin title */
+    font-size: 5em; /* Large font size for emphasis */
+    margin-top: 1%; /* Margin above title */
+    background: linear-gradient(to bottom, rgb(72, 107, 170), rgb(218, 231, 244)); /* Gradient background */
+    -webkit-text-fill-color: transparent; /* Make text transparent */
+    -webkit-background-clip: text; /* Clip background to text */
+}
+
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below labels */
+    color: var(--text-color); /* Label text color */
+}
+
+input, select {
+    width: 100%; /* Full width for inputs and selects */
+    padding: 10px; /* Internal padding */
+    margin-bottom: 15px; /* Space below elements */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    transition: border-color 0.3s ease; /* Smooth transition on focus */
+}
+
+input:focus, select:focus {
+    border-color: var(--primary-color); /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    padding: 10px 20px; /* Internal padding for buttons */
+    width: 100%; /* Full width for buttons */
+    background-color: var(--primary-color); /* Button background color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button text */
+    color: var(--background-color); /* Button text color */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+button:hover {
+    background-color: #5a91d9; /* Change background color on hover */
+}
+
+.footer-dark {
+    padding: 40px 0; /* Vertical padding for footer */
+    color: #f0f9ff; /* Text color in footer */
+    background-color: var(--primary-color); /* Footer background color */
+    display: flex; /* Use flexbox for footer layout */
+    flex-direction: column; /* Stack footer items vertically */
+    align-items: center; /* Center footer items */
+    margin-top: 13em; /* Space above footer */
+}
+
+.footer-dark h3 {
+    margin-top: 0; /* No top margin */
+    margin-bottom: 12px; /* Space below heading */
+    font-weight: bold; /* Bold heading */
+    font-size: 18px; /* Font size for footer heading */
+    text-transform: uppercase; /* Uppercase text */
+    color: var(--background-color); /* Footer heading text color */
+}
+
+.footer-dark ul {
+    padding: 0; /* No padding */
+    list-style: none; /* Remove bullet points */
+    line-height: 1.6; /* Line height for readability */
+    font-size: 14px; /* Font size for footer list */
+    margin-bottom: 0; /* No bottom margin */
+}
+
+.footer-dark ul a {
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none; /* Remove underline from links */
+    opacity: 0.7; /* Slightly transparent links */
+    transition: opacity 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+.footer-dark ul a:hover {
+    opacity: 1; /* Fully opaque on hover */
+    color: var(--primary-color); /* Change color on hover */
+}
+
+.footer-dark .copyright {
+    text-align: center; /* Center copyright text */
+    padding-top: 24px; /* Space above copyright */
+    opacity: 0.3; /* Slightly transparent */
+    font-size: 13px; /* Font size for copyright */
+    margin-bottom: 0; /* No bottom margin */
+    width: 100%; /* Full width for copyright */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    nav li {
+        margin: 10px 0; /* Space between nav items */
+        font-size: 2em; /* Adjust font size for smaller screens */
+    }
+
+    .container, .admin-controls {
+        width: 95%; /* Adjust width for smaller screens */
+        padding: 10px; /* Adjust padding */
+    }
+
+    h1.admin {
+        font-size: 3em;  /* Smaller font size for admin title */
+    }
+
+    .footer-dark .container {
+        flex-direction: column; /* Stack footer items vertically */
+        align-items: center; /* Center footer items */
+    }
+}

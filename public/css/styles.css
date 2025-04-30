@@ -1,0 +1,301 @@
+@font-face {
+    font-family: bingo; /* Define a custom font called 'bingo' */
+    src: url(BingoHeyhoRegular.otf); /* Specify the font file source */
+}
+
+:root {
+    /* Define color variables for consistent theming */
+    --primary-color: #30427c; /* Main theme color */
+    --secondary-color: #d6e2f6; /* Light secondary color */
+    --text-color: #333; /* Default text color */
+    --background-color: #fff; /* Background color for elements */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Default font for body text */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: var(--secondary-color); /* Set background color */
+    color: var(--text-color); /* Set text color */
+    line-height: 1.6; /* Increase line height for readability */
+}
+
+.container {
+    max-width: 1200px; /* Maximum width for the container */
+    width: 90%; /* Responsive width */
+    margin: 20px auto; /* Center the container with margins */
+    padding: 20px; /* Internal padding */
+    background-color: var(--background-color); /* Background color for the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+h1, h2, h3 {
+    text-align: center; /* Center align heading text */
+    color: var(--primary-color); /* Set color for headings */
+}
+
+nav {
+    display: flex; /* Use flexbox for navigation layout */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+    background-color: var(--primary-color); /* Background color for nav */
+    padding: 10px 5%; /* Padding around nav items */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+nav ul {
+    display: flex; /* Horizontal list using flexbox */
+    justify-content: center; /* Center list items */
+    flex-grow: 1; /* Allow the list to grow */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    list-style: none; /* Remove bullet points */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: var(--background-color); /* Set link color */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav li {
+    margin: 0 15px; /* Space between nav items */
+    font-family: bingo, Arial, sans-serif; /* Use custom font for nav items */
+    font-size: 2.5em; /* Large font size for visibility */
+}
+
+nav a:hover {
+    color: var(--secondary-color); /* Change link color on hover */
+}
+
+button {
+    padding: 10px 20px; /* Internal padding for buttons */
+    background-color: var(--primary-color); /* Background color for buttons */
+    border: none; /* No border for buttons */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button text */
+    color: var(--background-color); /* Text color for buttons */
+    margin: 10px 0; /* Space above and below buttons */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+button:hover {
+    background-color: #5a91d9; /* Change button background color on hover */
+}
+
+#registrationForm {
+    max-width: 600px; /* Maximum width for registration form */
+    margin: 20px auto; /* Center the form with margins */
+    padding: 20px; /* Internal padding */
+    background-color: var(--background-color); /* Background color for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+#registrationForm label {
+    display: block; /* Display labels as block elements */
+    margin-bottom: 5px; /* Space below labels */
+    color: var(--text-color); /* Set label color */
+}
+
+#registrationForm input[type="text"],
+#registrationForm input[type="email"],
+#registrationForm select {
+    width: 100%; /* Full width for inputs and selects */
+    padding: 10px; /* Internal padding */
+    margin-bottom: 15px; /* Space below elements */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+#registrationForm input[type="text"]:focus,
+#registrationForm input[type="email"]:focus,
+#registrationForm select:focus {
+    border-color: var(--primary-color); /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+#registrationForm button {
+    padding: 10px 20px; /* Internal padding */
+    background-color: var(--primary-color); /* Background color for button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button text */
+    color: var(--background-color); /* Text color for button */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+#registrationForm button:hover {
+    background-color: #5a91d9; /* Change button background color on hover */
+}
+
+.admin-controls {
+    max-width: 1200px; /* Maximum width for admin controls */
+    margin: 20px auto; /* Center with margins */
+    padding: 20px; /* Internal padding */
+    background-color: var(--background-color); /* Background color for admin controls */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+table {
+    width: 100%; /* Full width for tables */
+    border-collapse: collapse; /* Collapse borders for table cells */
+    margin-top: 20px; /* Space above table */
+}
+
+td {
+    padding: 15px; /* Internal padding for table cells */
+    vertical-align: top; /* Align text to the top of cells */
+    border: 1px solid #ddd; /* Light gray border for table cells */
+}
+
+label {
+    display: block; /* Display labels as block elements */
+    margin-bottom: 5px; /* Space below labels */
+    color: var(--text-color); /* Set label color */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="email"] {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Internal padding */
+    margin-bottom: 15px; /* Space below elements */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus {
+    border-color: var(--primary-color); /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.edit-button, .delete-button {
+    padding: 5px 10px; /* Internal padding for edit/delete buttons */
+    margin-left: 10px; /* Space to the left of buttons */
+    background-color: var(--primary-color); /* Background color for buttons */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: var(--background-color); /* Text color for buttons */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.edit-button:hover, .delete-button:hover {
+    background-color: #5a91d9; /* Change button background color on hover */
+}
+
+button a {
+    text-decoration: none; /* Remove underline from links in buttons */
+    color: inherit; /* Inherit color from button */
+}
+
+.footer-dark {
+    padding: 40px 0; /* Vertical padding for footer */
+    color: #f0f9ff; /* Text color for footer */
+    background-color: var(--primary-color); /* Background color for footer */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items horizontally */
+    margin-top: 13em; /* Space above footer */
+}
+
+.footer-dark h3 {
+    margin-top: 0; /* No margin on top */
+    margin-bottom: 12px; /* Space below heading */
+    font-weight: bold; /* Bold text for heading */
+    font-size: 18px; /* Font size for heading */
+    text-transform: uppercase; /* Uppercase text */
+    color: var(--background-color); /* Text color for footer heading */
+}
+
+.footer-dark ul {
+    padding: 0; /* Remove padding from list */
+    list-style: none; /* Remove bullet points */
+    line-height: 1.6; /* Increase line height for list items */
+    font-size: 14px; /* Font size for list items */
+    margin-bottom: 0; /* No margin below list */
+}
+
+.footer-dark ul a {
+    color: inherit; /* Inherit color from footer */
+    text-decoration: none; /* Remove underline from links */
+    opacity: 0.7; /* Slightly transparent links */
+    transition: opacity 0.3s, color 0.3s; /* Smooth transition for opacity and color */
+}
+
+.footer-dark ul a:hover {
+    opacity: 1; /* Fully opaque on hover */
+    color: var(--primary-color); /* Change color on hover */
+}
+
+.footer-dark .copyright {
+    text-align: center; /* Center align copyright text */
+    padding-top: 24px; /* Space above copyright text */
+    opacity: 0.3; /* Slightly transparent copyright text */
+    font-size: 13px; /* Font size for copyright text */
+    margin-bottom: 0; /* No margin below copyright */
+    width: 100%; /* Full width for copyright */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav list items vertically */
+        align-items: center; /* Center align list items */
+    }
+
+    nav li {
+        margin: 10px 0; /* Space above and below nav items */
+        font-size: 2em; /* Adjust font size for nav items */
+    }
+
+    .container, .admin-controls {
+        width: 95%; /* Adjust width for smaller screens */
+        padding: 10px; /* Reduce padding */
+    }
+
+    table, tr, td {
+        display: block; /* Stack table rows and cells vertically */
+    }
+
+    td {
+        border: none; /* Remove border for table cells */
+        position: relative; /* Position for label display */
+        padding-left: 50%; /* Space for label display */
+    }
+
+    td:before {
+        content: attr(data-label); /* Display data label for cells */
+        position: absolute; /* Absolute positioning */
+        left: 6px; /* Space from the left */
+        width: 45%; /* Width of the label */
+        padding-right: 10px; /* Space on the right */
+        white-space: nowrap; /* Prevent text wrapping */
+        font-weight: bold; /* Bold label text */
+    }
+
+    .footer-dark .container {
+        flex-direction: column; /* Stack footer items vertically */
+        align-items: center; /* Center align footer items */
+    }
+
+    .footer-dark .item {
+        text-align: center; /* Center align footer item text */
+        margin-bottom: 30px; /* Space below footer items */
+    }
+}
